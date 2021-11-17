@@ -1,0 +1,27 @@
+// HEADER
+.header {
+  margin: 8rem 0;
+  display: flex;
+  flex-direction: column;
+  padding: 0 3.5rem;
+  gap: 8rem;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 8rem 0;
+  }
+}
+
+// MAIN
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10rem;
+}
+// FOOTER
