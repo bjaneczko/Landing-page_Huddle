@@ -1,10 +1,9 @@
 // HEADER
 .header {
-  margin: 8rem 0;
+  margin: 9rem 0;
   display: flex;
   flex-direction: column;
   padding: 0 3.5rem;
-  gap: 8rem;
 
   &__content {
     display: flex;
@@ -14,6 +13,19 @@
     gap: 2rem;
     margin-bottom: 8rem 0;
   }
+
+  &__button {
+    align-self: center;
+    margin: 5rem 0;
+  }
+
+  &__illustration {
+    margin-top: 6rem;
+  }
+}
+
+.header__content:last-child {
+  background-color: red;
 }
 
 // MAIN
@@ -21,7 +33,117 @@
 .stats {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 10rem;
+  margin-top: 13rem;
+  margin-bottom: 2rem;
+
+  &__background {
+    position: relative;
+    display: block;
+  }
+}
+
+.container {
+  display: grid;
+  justify-items: center;
+  row-gap: 8rem;
+  background-color: #f6fbff;
+  padding: 8rem 0;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 2.2rem;
+  }
+  &__illustration {
+    padding: 0 5rem;
+  }
+  &__img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.background-white {
+  background-color: white;
 }
 // FOOTER
+
+.footer {
+  background-color: $cyan-very-dark;
+  color: $blue-very-pale;
+  padding: 6rem 2.5rem;
+  display: grid;
+  row-gap: 12rem;
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2.3rem;
+  }
+
+  &__heading {
+    font-family: "Open Sans";
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+
+  &__input {
+    border: none;
+    border-radius: 0.6rem;
+    padding: 1.9rem;
+  }
+
+  &__button {
+    margin-left: auto;
+    margin-top: 1.5rem;
+  }
+}
+
+.contact {
+  &__logo {
+    filter: brightness(0) invert(1);
+    width: 60%;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    margin-top: 1.5rem;
+  }
+  &__text {
+    font-size: 1.4rem;
+    line-height: 2.3rem;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+.information {
+  display: flex;
+  gap: 2rem;
+}
+
+// Waves
+
+.background-curve-mobile {
+  display: block;
+  width: 100%;
+}
