@@ -1,11 +1,171 @@
-// HEADER
-
-// MAIN
 @media screen and (min-width: 600px) {
+  .navbar {
+    padding: 5rem;
+    &__logo {
+      width: 15rem;
+    }
+  }
+  // HEADER
+  .header {
+    padding: 0 7rem;
+  }
+  // MAIN
   .stats {
     flex-direction: row;
     justify-content: center;
+    gap: 15rem;
+    margin-bottom: 8rem;
+  }
+  .container {
+    padding: 8rem 4rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "content illustration";
+    text-align: start;
+
+    &__illustration {
+      grid-area: illustration;
+    }
+
+    &__content {
+      grid-area: content;
+    }
+  }
+
+  .container-conversations {
+    padding: 8rem 4rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "illustration content";
+    text-align: start;
+
+    &__illustration {
+      grid-area: illustration;
+    }
+
+    &__content {
+      grid-area: content;
+    }
+  }
+
+  .container-question {
+    gap: 2rem;
+  }
+
+  // FOOTER
+  .footer {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "contact newsletter";
+    gap: 5rem;
+    padding: 7rem;
+  }
+
+  .newsletter {
+    grid-area: newsletter;
+  }
+
+  .contact {
+    grid-area: contact;
+  }
+  // Buttons
+
+  .btn {
+    &--transparent {
+      font-size: 1.5rem;
+    }
+  }
+
+  // Waves
+
+  .background-curve-mobile {
+    display: none;
+  }
+
+  .background-curve-desktop {
+    display: block;
   }
 }
 
-// FOOTER
+@media screen and (min-width: 1000px) {
+  // HEADER
+  .header {
+    padding: 0 15rem;
+    &__illustration {
+      width: 70%;
+      margin: 0 auto;
+    }
+  }
+  // MAIN
+  .stats {
+    gap: 30rem;
+  }
+  .container {
+    padding: 8rem;
+    &__illustration {
+      width: 100%;
+    }
+
+    &__content {
+      width: 80%;
+    }
+  }
+
+  .container-conversations {
+    padding: 8rem;
+    &__illustration {
+      width: 100%;
+    }
+
+    &__content {
+      width: 80%;
+    }
+  }
+
+  .container-question {
+    gap: 2rem;
+  }
+
+  // FOOTER
+  .footer {
+    padding: 10rem;
+    gap: 20vw;
+  }
+
+  // Buttons
+
+  .btn {
+    &--primary {
+      font-size: 1.5rem;
+      padding: 1.5rem 7rem;
+    }
+  }
+
+  // Headings & text
+
+  .heading--primary {
+    font-size: 3.5rem;
+  }
+
+  .heading--secondary {
+    color: $cyan-very-dark;
+    font-family: "Poppins";
+    font-size: 2.5rem;
+  }
+
+  .text--primary {
+    font-size: 2rem;
+    width: 50%;
+  }
+
+  .text--secondary {
+    font-size: 1.5rem;
+  }
+
+  // Waves
+
+  .background-curve-mobile {
+    display: none;
+  }
+
+  .background-curve-desktop {
+    display: block;
+  }
+}
