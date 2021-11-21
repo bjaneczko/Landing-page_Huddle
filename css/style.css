@@ -144,7 +144,7 @@ body {
 .newsletter__input {
   border: none;
   border-radius: 0.6rem;
-  padding: 1.9rem;
+  padding: 1.6rem;
 }
 .newsletter__button {
   margin-left: auto;
@@ -154,7 +154,7 @@ body {
 .contact__logo {
   -webkit-filter: brightness(0) invert(1);
           filter: brightness(0) invert(1);
-  width: 60%;
+  width: 18rem;
 }
 .contact__content {
   display: -webkit-box;
@@ -164,7 +164,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 6rem;
+  gap: 4rem;
   margin-top: 1.5rem;
 }
 .contact__text {
@@ -180,6 +180,13 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 2rem;
+}
+.contact__socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+  font-size: 2.5rem;
 }
 
 .information {
@@ -293,10 +300,6 @@ body {
 
 .text--secondary {
   font-size: 1.4rem;
-}
-
-.fa-1 {
-  fill: white;
 }
 
 @media screen and (min-width: 600px) {

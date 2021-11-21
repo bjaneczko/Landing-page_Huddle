@@ -103,7 +103,7 @@
   &__input {
     border: none;
     border-radius: 0.6rem;
-    padding: 1.9rem;
+    padding: 1.6rem;
   }
 
   &__button {
@@ -115,13 +115,13 @@
 .contact {
   &__logo {
     filter: brightness(0) invert(1);
-    width: 60%;
+    width: 18rem;
   }
 
   &__content {
     display: flex;
     flex-direction: column;
-    gap: 6rem;
+    gap: 4rem;
     margin-top: 1.5rem;
   }
   &__text {
@@ -133,6 +133,12 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
+  }
+
+  &__socials {
+    display: flex;
+    gap: 2rem;
+    font-size: 2.5rem;
   }
 }
 
