@@ -282,6 +282,7 @@ body {
 }
 .navbar__logo {
   width: 10rem;
+  cursor: pointer;
 }
 
 .stats-card {
@@ -333,6 +334,9 @@ body {
   -webkit-box-shadow: 0px 10px 10px -14px #42445a;
           box-shadow: 0px 10px 10px -14px #42445a;
 }
+.btn--primary:hover {
+  background-color: #ff8fd8;
+}
 .btn--rectangle {
   font-size: 1.6rem;
   font-family: "Open Sans";
@@ -342,6 +346,9 @@ body {
   border: none;
   border-radius: 0.5rem;
   padding: 1.3rem 4rem;
+}
+.btn--rectangle:hover {
+  background-color: #ff8fd8;
 }
 
 .text--center {
@@ -366,6 +373,15 @@ body {
 
 .text--secondary {
   font-size: 1.4rem;
+}
+
+.fab {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+.fab:hover {
+  color: #ff8fd8;
 }
 
 @media screen and (min-width: 600px) {
