@@ -15,6 +15,7 @@ body {
   font-family: "Open Sans", "Poppins", sans-serif;
 }
 
+/* Mailchimp CSS */
 .header {
   margin: 9rem 0;
   display: -webkit-box;
@@ -190,12 +191,21 @@ body {
   line-height: 2.5rem;
 }
 .newsletter__input {
+  width: 100%;
   border: none;
   border-radius: 0.6rem;
   padding: 1.6rem;
 }
+.newsletter__input:focus {
+  outline: 2px solid red;
+}
 .newsletter__button {
-  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
   margin-top: 1.5rem;
 }
 
@@ -440,6 +450,10 @@ body {
   }
 }
 @media screen and (min-width: 1000px) {
+  .navbar {
+    padding: 5rem 10rem;
+  }
+
   .header {
     padding: 0 15rem;
   }
@@ -504,12 +518,18 @@ body {
   .text--secondary {
     font-size: 1.5rem;
   }
-
-  .background-curve-mobile {
-    display: none;
+}
+@media screen and (min-width: 1300px) {
+  .newsletter__button {
+    margin: 0;
   }
-
-  .background-curve-desktop {
-    display: block;
+  .newsletter__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 2rem;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -134,13 +134,18 @@
   }
 
   &__input {
+    width: 100%;
     border: none;
     border-radius: 0.6rem;
     padding: 1.6rem;
+    &:focus {
+      outline: 2px solid red;
+    }
   }
 
   &__button {
-    margin-left: auto;
+    display: flex;
+    justify-content: end;
     margin-top: 1.5rem;
   }
 }

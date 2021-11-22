@@ -85,6 +85,9 @@
 }
 
 @media screen and (min-width: 1000px) {
+  .navbar {
+    padding: 5rem 10rem;
+  }
   // HEADER
   .header {
     padding: 0 15rem;
@@ -158,14 +161,17 @@
   .text--secondary {
     font-size: 1.5rem;
   }
+}
 
-  // Waves
-
-  .background-curve-mobile {
-    display: none;
-  }
-
-  .background-curve-desktop {
-    display: block;
+@media screen and (min-width: 1300px) {
+  .newsletter {
+    &__button {
+      margin: 0;
+    }
+    &__form {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
   }
 }
