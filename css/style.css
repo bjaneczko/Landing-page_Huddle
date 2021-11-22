@@ -398,8 +398,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   background-color: #ff8fd8;
-  border-radius: 0.25rem;
-  padding: 2rem;
+  border-radius: 100%;
+  padding: 1.2rem;
   opacity: 0.7;
   z-index: 1000;
   -webkit-transition: 0.4s;
