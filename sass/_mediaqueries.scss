@@ -7,7 +7,7 @@
   }
   // HEADER
   .header {
-    padding: 0 7rem;
+    padding: 0 10rem;
   }
   // MAIN
   .stats {
@@ -28,6 +28,7 @@
 
     &__content {
       grid-area: content;
+      padding: 0;
     }
   }
 
@@ -43,6 +44,7 @@
 
     &__content {
       grid-area: content;
+      padding: 0;
     }
   }
 
@@ -92,7 +94,7 @@
   .header {
     padding: 0 15rem;
     &__illustration {
-      width: 70%;
+      width: 90%;
       margin: 0 auto;
     }
   }
@@ -144,7 +146,7 @@
   // Headings & text
 
   .heading--primary {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 
   .heading--secondary {
@@ -155,7 +157,7 @@
 
   .text--primary {
     font-size: 2rem;
-    width: 50%;
+    width: 80%;
   }
 
   .text--secondary {
@@ -164,6 +166,26 @@
 }
 
 @media screen and (min-width: 1300px) {
+  .navbar {
+    padding: 5vw;
+    &__logo {
+      width: 25rem;
+    }
+  }
+  .stats-card {
+    &__icon {
+      width: 5rem;
+    }
+    &__heading {
+      font-size: 10rem;
+    }
+    &__text {
+      font-size: 2.5rem;
+    }
+  }
+  .header {
+    gap: 10rem;
+  }
   .newsletter {
     &__button {
       margin: 0;
@@ -173,5 +195,27 @@
       align-items: center;
       gap: 2rem;
     }
+  }
+  .btn {
+    &--primary {
+      font-size: 2rem;
+    }
+    &--transparent {
+      font-size: 2rem;
+    }
+  }
+
+  .heading--primary {
+    font-size: 4.5rem;
+  }
+  .text--primary {
+    font-size: 3rem;
+    width: 80%;
+  }
+  .heading--secondary {
+    font-size: 4rem;
+  }
+  .text--secondary {
+    font-size: 2rem;
   }
 }

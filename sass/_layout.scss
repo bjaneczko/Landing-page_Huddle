@@ -167,7 +167,7 @@
     line-height: 2.3rem;
   }
 
-  &__info {
+  &__information-wrapper {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -178,6 +178,15 @@
     gap: 2rem;
     font-size: 2.5rem;
   }
+
+  &__icon {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    &:hover {
+      color: $pink-light;
+    }
+  }
 }
 
 .information {
@@ -185,7 +194,9 @@
   gap: 2rem;
 
   &__icon {
-    display: block;
+    display: flex;
+    align-items: center;
+    font-size: 2.5rem;
   }
 }
 
