@@ -389,6 +389,52 @@ body {
   font-size: 1.4rem;
 }
 
+/*=============== SCROLL UP ===============*/
+.scrollup {
+  position: fixed;
+  right: 3rem;
+  bottom: -10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #ff8fd8;
+  border-radius: 0.25rem;
+  padding: 2rem;
+  opacity: 0.7;
+  z-index: 1000;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+.scrollup:hover {
+  background-color: #ff52bf;
+  opacity: 0.7;
+}
+.scrollup__icon {
+  color: black;
+  font-size: 1.5rem;
+}
+
+/* Show Scroll Up*/
+.show-scroll {
+  bottom: 3rem;
+}
+
+/*=============== SCROLL BAR ===============*/
+::-webkit-scrollbar {
+  width: 0.6rem;
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ff52bf;
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #ff8fd8;
+}
+
 @media screen and (min-width: 600px) {
   .navbar {
     padding: 5rem;
@@ -561,7 +607,10 @@ body {
   }
 
   .header {
-    gap: 10rem;
+    gap: 8rem;
+  }
+  .header__illustration {
+    width: 70%;
   }
 
   .newsletter__button {

@@ -184,7 +184,10 @@
     }
   }
   .header {
-    gap: 10rem;
+    gap: 8rem;
+    &__illustration {
+      width: 70%;
+    }
   }
   .newsletter {
     &__button {

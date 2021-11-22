@@ -104,3 +104,47 @@
 .text--secondary {
   font-size: 1.4rem;
 }
+
+// Scroll up
+/*=============== SCROLL UP ===============*/
+.scrollup {
+  position: fixed;
+  right: 3rem;
+  bottom: -10%;
+  display: flex;
+  background-color: $pink-light;
+  border-radius: 0.25rem;
+  padding: 2rem;
+  opacity: 0.7;
+  z-index: 1000;
+  transition: 0.4s;
+
+  &:hover {
+    background-color: $pink;
+    opacity: 0.7;
+  }
+
+  &__icon {
+    color: black;
+    font-size: 1.5rem;
+  }
+}
+
+/* Show Scroll Up*/
+.show-scroll {
+  bottom: 3rem;
+}
+
+/*=============== SCROLL BAR ===============*/
+::-webkit-scrollbar {
+  width: 0.6rem;
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $pink;
+  border-radius: 0.5rem;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: $pink-light;
+}
